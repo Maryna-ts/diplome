@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  background-color: #ffffff; }
+
+header, main, footer {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+header {
+  background: url(../images/Home.png); }
+
+.nStart {
+  display: flex;
+  flex-direction: row; }
+
+.nav-start {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px; }
+
+.navigation {
+  display: flex; }
+
+.navigation-item {
+  display: flex;
+  align-items: stretch;
+  margin: 0px 0px 0 35px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif; }
+
+.nav-start h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF; }
+
+.startup {
+  padding: 260px; }
+  .startup h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center; }
+  .startup p {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px; }
+  .startup .but-start {
+    text-align: center;
+    padding-top: 35px; }
+    .startup .but-start button {
+      font-family: 'Montserrat', sans-serif;
+      width: 170px;
+      height: 50px;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+      cursor: pointer;
+      background: transparent;
+      background-color: transparent;
+      margin: 0 auto;
+      border: 1px solid #ffff; }
+
+.services-serv {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .services-serv h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    font-size: 20px;
+    color: #555555;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px; }
+  .services-serv hr {
+    max-width: 50px; }
+  .services-serv p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+    padding-top: 30px; }
+
+.servises-col {
+  margin: 0 auto; }
+  .servises-col .container {
+    padding-bottom: 100px; }
+    .servises-col .container .letter {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      position: relative;
+      margin: 0 auto; }
+    .servises-col .container .letter-a img {
+      position: absolute;
+      top: 23px;
+      left: 23.5px; }
+    .servises-col .container .letter-wrap {
+      padding-top: 30px; }
+      .servises-col .container .letter-wrap h1 {
+        padding-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #555555;
+        text-align: center;
+        margin: 0; }
+      .servises-col .container .letter-wrap p {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #555555;
+        margin: 0; }
+    .servises-col .container .letter-d {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      border: 1px solid #555555;
+      position: relative;
+      margin: 0 auto; }
+    .servises-col .container .let-k {
+      position: absolute;
+      top: 23px;
+      left: 16.5px; }
+    .servises-col .container .letter-h {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      border: 1px solid #555555;
+      position: relative;
+      margin: 0 auto; }
+    .servises-col .container .let-m {
+      position: absolute;
+      top: 16.5px;
+      left: 19px; }
+
+.about {
+  background-color: #f8f8f8; }
+
+.slide-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.team {
+  padding-right: 30px;
+  max-width: 262px;
+  height: 250px;
+  position: relative; }
+
+.team-pic4 {
+  max-width: 262px;
+  height: 250px;
+  position: relative; }
+  .team-pic4 .over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(141, 142, 148, 0.6);
+    display: none; }
+  .team-pic4 .over i {
+    font-size: 28px;
+    color: #ffffff;
+    position: relative;
+    top: 80%;
+    left: 25%;
+    padding-right: 10px; }
+
+.team-pic4:hover .over {
+  display: block; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  border: 1px solid #c0301c;
+  width: 36px !important;
+  height: 38px !important;
+  background-color: #c0301c !important; }
+
+.carousel-control-prev {
+  align-items: center;
+  justify-content: flex-start !important; }
+
+.carousel-control-next {
+  justify-content: flex-end !important; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
