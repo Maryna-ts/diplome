@@ -415,6 +415,68 @@ header {
   .data img {
     padding: 15px 22px; }
 
+.ideas a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #c0301c;
+  text-align: start;
+  padding-bottom: 20px;
+  padding-left: 28px; }
+
+.ideas p {
+  text-align: start;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+  color: #c0301c;
+  font-style: italic; }
+  .ideas p a {
+    font-size: 13px; }
+
+.lorem p {
+  text-align: start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #555555; }
+
+.lorem a {
+  text-align: start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #c0301c;
+  font-weight: bold; }
+
+.us-id {
+  padding-left: 28px; }
+  .us-id h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+    text-align: start;
+    margin: 0; }
+  .us-id p {
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #555555;
+    font-style: italic; }
+
+.MEDIA .carousel-indicators li {
+  border-radius: 50% !important;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #c0301c !important; }
+
+.carousel-caption h5 {
+  color: #555555; }
+
+.carousel-caption p {
+  color: #555555; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto; }

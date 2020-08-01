@@ -317,8 +317,45 @@ html
                 p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam 
                 a(class="more" href="#") READ MORE
           hr
+          .blog-img-text
+            .dlock-blog
+              img(src="images/Rectangle 12.png", alt="картинка")
+            .block-text
+              .data
+                img(src="images/18 Oct.png", alt="дата")
+              .us-id  
+                h1 User Interface Designing Elements
+                p By Khalil Uddin in Development 
+              .lorem
+                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam 
+                a(class="more" href="#") READ MORE
 
-        
+      section(class="MEDIA")  
+        #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+            li(data-target='#carouselExampleCaptions', data-slide-to='1')
+            li(data-target='#carouselExampleCaptions', data-slide-to='2')
+          .carousel-inner
+            .carousel-item.active
+              img.d-block.w-100(src='images/serf8.png', alt='фон')
+              .carousel-caption.d-none.d-md-block
+                h5 First slide label
+                p Nulla vitae elit libero, a pharetra augue mollis interdum.
+            .carousel-item
+              img.d-block.w-100(src='images/serf8.png', alt='фон')
+              .carousel-caption.d-none.d-md-block
+                h5 Second slide label
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .carousel-item
+              img.d-block.w-100(src='images/serf8.png', alt='фон')
+              .carousel-caption.d-none.d-md-block
+                h5 Third slide label
+                p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+            span.sr-only Next
          
           
 
