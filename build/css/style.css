@@ -166,6 +166,9 @@ header {
     padding-top: 30px;
     margin: 0; }
 
+.about-us-col .row {
+  padding-bottom: 75px; }
+
 .slide-content {
   display: flex;
   flex-wrap: wrap;
@@ -245,6 +248,11 @@ header {
 
 .team-pic:hover .over {
   display: block; }
+
+.carousel-control-prev, .carousel-control-next {
+  width: 36px !important;
+  height: 38px !important;
+  top: 104px !important; }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   border: 1px solid #c0301c;
@@ -334,10 +342,11 @@ header {
   display: block; }
 
 .Work {
-  background: url(../images/frash.png); }
+  background: url(../images/frash.png) no-repeat;
+  position: relative; }
 
 .work-projekt {
-  padding: 100px 0;
+  padding: 100px 0 80px 0;
   margin: 0 auto;
   text-align: center; }
   .work-projekt p {
@@ -364,6 +373,18 @@ header {
     margin: 0 auto;
     border: 1px solid #ffff; }
 
+.work-overl {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: rgba(243, 148, 148, 0.6) no-repeat;
+  display: none; }
+
+.Work:hover .work-overl {
+  display: block; }
+
 .BLOG {
   padding: 100px 0; }
 
@@ -389,40 +410,44 @@ header {
   padding-bottom: 70px; }
 
 .blog-img-text {
-  display: grid;
+  display: flex;
   padding: 30px;
-  grid-template-columns: 1fr 3fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 10px;
-  grid-auto-flow: column; }
+  justify-content: space-between; }
 
 .block-text {
-  display: grid;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 75px 2fr;
-  grid-auto-rows: minmax(75px, auto);
-  grid-gap: 10px; }
-
-.lorem:nth-child(3) {
-  grid-column: 1 / -1; }
+  padding: 30px; }
 
 .ideas {
   padding-right: 5px; }
 
 .data {
-  border: 1px solid black; }
-  .data img {
-    padding: 15px 22px; }
+  display: flex; }
+
+.data-oct {
+  border: 1px solid #555555;
+  padding: 5px 15px;
+  margin-right: 25px; }
+  .data-oct h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+    text-align: center;
+    margin: 0; }
+  .data-oct p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #555555;
+    text-align: center;
+    margin: 0; }
 
 .ideas a {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
   color: #c0301c;
-  text-align: start;
-  padding-bottom: 20px;
-  padding-left: 28px; }
+  text-align: start; }
 
 .ideas p {
   text-align: start;
@@ -448,22 +473,21 @@ header {
   color: #c0301c;
   font-weight: bold; }
 
-.us-id {
-  padding-left: 28px; }
-  .us-id h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #555555;
-    text-align: start;
-    margin: 0; }
-  .us-id p {
-    text-align: start;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    color: #555555;
-    font-style: italic; }
+.us-id h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+  text-align: start;
+  margin: 0; }
+
+.us-id p {
+  text-align: start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #555555;
+  font-style: italic; }
 
 .MEDIA .carousel-indicators li {
   border-radius: 50% !important;
@@ -472,11 +496,16 @@ header {
   background-color: #c0301c !important; }
 
 .MEDIA .carousel-indicators {
-  margin-bottom: 100px !important; }
+  bottom: 25px; }
 
-.carousel-caption {
-  top: 20%; }
-  .carousel-caption h5 {
+.MEDIA #carouselExampleCaptions {
+  padding-bottom: 84px;
+  background: #f8f8f8;
+  padding-top: 100px; }
+
+.MEDIA .carousel-item {
+  background: #f8f8f8; }
+  .MEDIA .carousel-item h5 {
     color: #555555;
     padding-bottom: 42px;
     text-align: center;
@@ -487,7 +516,7 @@ header {
     font-style: italic;
     max-width: 760px;
     margin: 0 auto; }
-  .carousel-caption p {
+  .MEDIA .carousel-item p {
     color: #555555;
     padding-bottom: 40px;
     text-align: center;
@@ -495,10 +524,14 @@ header {
     font-size: 20px;
     line-height: 30px;
     color: #555555; }
-  .carousel-caption .font {
+  .MEDIA .carousel-item .font {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 40px; }
+    .MEDIA .carousel-item .font > div {
+      margin-right: 55px; }
+      .MEDIA .carousel-item .font > div:last-child {
+        margin: 0; }
 
 .form {
   padding: 100px 0; }
@@ -528,34 +561,95 @@ header {
   display: flex;
   justify-content: space-between; }
 
-.adress-block {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 190px; }
-
 .block-formik {
-  justify-content: end; }
+  justify-content: flex-end;
+  max-width: 730px; }
 
 .marker {
-  display: flex;
-  padding-right: 10px; }
+  display: flex; }
   .marker i {
-    line-height: 15px; }
-
-.adress-t-b {
-  justify-content: space-between; }
-  .adress-t-b h1 {
+    line-height: 15px;
+    margin-right: 10px; }
+  .marker h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #555555;
     text-align: start; }
+
+.adress-t-b {
+  justify-content: space-between;
+  padding-left: 22px; }
   .adress-t-b p {
     font-size: 12px;
     line-height: 18px;
     color: #555555;
     text-align: start; }
 
+.form-text {
+  display: flex !important; }
+  .form-text .form-but button {
+    font-family: 'Montserrat', sans-serif;
+    width: 170px;
+    height: 44px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #555555;
+    cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+    margin: 0 auto;
+    border: 1px solid #555555; }
+  .form-text .form-wrap {
+    display: flex;
+    padding: 16px 0 16px 35px; }
+    .form-text .form-wrap .form-con {
+      color: #c0301c;
+      padding-right: 5px; }
+    .form-text .form-wrap .form-cont p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      color: #555555;
+      text-align: start; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+
+footer {
+  background-color: #c0301c;
+  margin: 0 auto; }
+
+.tw-all {
+  padding: 95px 0; }
+
+.twitt {
+  display: flex;
+  justify-content: center; }
+  .twitt .twitt-img {
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    margin-right: 15px; }
+    .twitt .twitt-img i {
+      line-height: 20px;
+      text-align: center;
+      padding: 10px;
+      color: #ffffff; }
+    .twitt .twitt-img:last-child {
+      margin: 0; }
+
+.twitt-hr {
+  padding: 30px; }
+  .twitt-hr hr {
+    max-width: 50px;
+    background-color: #ffffff; }
+
+.twitt-wrap h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff; }
