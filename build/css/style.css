@@ -666,11 +666,14 @@ footer {
     display: block; }
     .Latest-prof4545 .hair img {
       width: 100%;
-      height: 100%; }
-    .Latest-prof4545 .hair .hair-overl {
-      padding-top: 300px; } }
+      height: 100%; } }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
+  .us-id h1 {
+    text-align: center;
+    padding-top: 15px; }
+  .us-id p {
+    text-align: center; }
   .data {
     display: block; }
   .data-oct {
@@ -678,12 +681,44 @@ footer {
     margin: 0 auto; }
   .blog-img-text {
     display: block; }
-  .us-id h1 {
-    padding-bottom: 10px; }
+  .ideas {
+    margin-top: 10px; }
+    .ideas a {
+      text-align: center; }
   .ideas {
     padding: 10px;
     text-align: center; }
   .ideas a {
     text-align: center; }
-  .ideas p a {
-    margin-left: 155px; } }
+  .dlock-blog img {
+    max-width: 100%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 850px) {
+  .MEDIA .carousel-item .font {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; }
+  .MEDIA .carousel-item .font > div {
+    padding-bottom: 20px  !important; } }
+
+@media screen and (max-width: 810px) {
+  .nav-start {
+    display: block; }
+    .nav-start h5 {
+      text-align: center;
+      padding-bottom: 35px; }
+  .navigation {
+    display: block; }
+  .navigation-item {
+    display: block;
+    text-align: center; }
+  .startup {
+    padding: 20px 0; } }
+
+@media screen and (max-width: 730px) {
+  .form-text {
+    display: block !important;
+    margin: 0 auto !important; }
+    .form-text p {
+      text-align: center !important; } }
